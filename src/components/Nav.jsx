@@ -68,13 +68,15 @@ const Nav = () => {
               </NavLink>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">Book Vibe</a>
+          <a className="text-4xl font-black">Book Vibe</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 flex gap-6">
+          <ul className="menu menu-horizontal px-1 flex gap-6 items-center">
             <NavLink
               className={({ isActive }) =>
-                isActive ? "text-primary font-bold" : "font-bold"
+                isActive
+                  ? "text-[#23BE0A] font-bold border border-[#23BE0A] rounded-lg p-3"
+                  : "font-normal"
               }
               to="/"
             >
@@ -82,7 +84,9 @@ const Nav = () => {
             </NavLink>
             <NavLink
               className={({ isActive }) =>
-                isActive ? "text-primary font-bold" : "font-bold"
+                isActive
+                  ? "text-[#23BE0A] font-bold border border-[#23BE0A] rounded-lg p-3"
+                  : "font-normal"
               }
               to="/listedbooks"
             >
@@ -90,7 +94,9 @@ const Nav = () => {
             </NavLink>
             <NavLink
               className={({ isActive }) =>
-                isActive ? "text-primary font-bold" : "font-bold"
+                isActive
+                  ? "text-[#23BE0A] font-bold border border-[#23BE0A] rounded-lg p-3"
+                  : "font-normal"
               }
               to="/pagestoread"
             >
@@ -98,7 +104,9 @@ const Nav = () => {
             </NavLink>
             <NavLink
               className={({ isActive }) =>
-                isActive ? "text-primary font-bold" : "font-bold"
+                isActive
+                  ? "text-[#23BE0A] font-bold border border-[#23BE0A] rounded-lg p-3"
+                  : "font-normal"
               }
               to="/contact"
             >
@@ -106,7 +114,9 @@ const Nav = () => {
             </NavLink>
             <NavLink
               className={({ isActive }) =>
-                isActive ? "text-primary font-bold" : "font-bold"
+                isActive
+                  ? "text-[#23BE0A] font-bold border border-[#23BE0A] rounded-lg p-3"
+                  : "font-normal"
               }
               to="/featuredbooks"
             >
@@ -115,8 +125,8 @@ const Nav = () => {
           </ul>
         </div>
         <div className="navbar-end flex gap-4">
-          <a className="btn">Sign In</a>
-          <a className="btn">Sign Up</a>
+          <a className="btn bg-[#23BE0A] text-white">Sign In</a>
+          <a className="btn bg-[#59C6D2] text-white">Sign Up</a>
         </div>
       </div>
     </div>

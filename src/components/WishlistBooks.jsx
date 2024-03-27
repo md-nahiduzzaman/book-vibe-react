@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getBooks, getWishlistBooks } from "../utils";
 import BookCard from "./BookCard";
+import BookCardLand from "./BookCardLand";
 
 const WishlistBooks = () => {
   const [WishlishBooks, setWishlistBook] = useState([]);
@@ -14,9 +15,9 @@ const WishlistBooks = () => {
     <div>
       <h1>Wishlist Books: {WishlishBooks.length}</h1>
       <div>
-        <div className="grid grid-cols-4">
+        <div className="">
           {WishlishBooks.map((book) => (
-            <BookCard book={book}></BookCard>
+            <BookCardLand book={book}></BookCardLand>
           ))}
         </div>
       </div>

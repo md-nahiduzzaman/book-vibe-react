@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { getBooks } from "../utils";
 import BookCard from "./BookCard";
 import EmptyState from "./EmptyState";
+import BookCardLand from "./BookCardLand";
 
 const ReadBooks = () => {
   const [ReadBooks, setReadBooks] = useState([]);
@@ -16,10 +17,9 @@ const ReadBooks = () => {
   }
   return (
     <div>
-      <h1>Reading Books: {ReadBooks.length}</h1>
-      <div className="grid grid-cols-4">
+      <div className="">
         {ReadBooks.map((book) => (
-          <BookCard key={book.bookId} book={book}></BookCard>
+          <BookCardLand key={book.bookId} book={book}></BookCardLand>
         ))}
       </div>
     </div>

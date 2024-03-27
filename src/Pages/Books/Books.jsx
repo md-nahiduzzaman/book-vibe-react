@@ -14,7 +14,7 @@ const Books = () => {
     <div>
       <div className="grid sm:grid-cols-3 gap-6">
         {books.map((book) => (
-          <BookCard book={book}></BookCard>
+          <BookCard key={book.bookId} book={book}></BookCard>
         ))}
       </div>
     </div>

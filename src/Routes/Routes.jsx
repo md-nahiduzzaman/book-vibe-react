@@ -27,6 +27,7 @@ const router = createBrowserRouter([
         children: [
           {
             index: true,
+            // path: "readbook",
             element: <ReadBooks></ReadBooks>,
           },
           {

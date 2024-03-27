@@ -1,25 +1,17 @@
-import { useEffect, useState } from "react";
-import { getBooks, getWishlistBooks } from "../utils";
-import BookCard from "./BookCard";
+import { useContext } from "react";
+
 import BookCardLand from "./BookCardLand";
+import { BooksContext } from "../Pages/ListedBook/ListedBook";
 
 const WishlistBooks = () => {
-  const [WishlishBooks, setWishlistBook] = useState([]);
-
-  useEffect(() => {
-    const savedWishListBooks = getWishlistBooks();
-    setWishlistBook(savedWishListBooks);
-  }, []);
+  const { WishlistBooks } = useContext(BooksContext);
 
   return (
     <div>
-      <h1>Wishlist Books: {WishlishBooks.length}</h1>
-      <div>
-        <div className="">
-          {WishlishBooks.map((book) => (
-            <BookCardLand book={book}></BookCardLand>
-          ))}
-        </div>
+      <div className="">
+        {WishlistBooks.map((book) => (
+          <BookCardLand key={book.bookId} book={book}></BookCardLand>
+        ))}
       </div>
     </div>
   );

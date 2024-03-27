@@ -1,20 +1,11 @@
-import { useEffect, useState } from "react";
-import { getBooks } from "../utils";
-import BookCard from "./BookCard";
-import EmptyState from "./EmptyState";
+import { useContext } from "react";
+
 import BookCardLand from "./BookCardLand";
+import { BooksContext } from "../Pages/ListedBook/ListedBook";
 
 const ReadBooks = () => {
-  const [ReadBooks, setReadBooks] = useState([]);
+  const { ReadBooks } = useContext(BooksContext);
 
-  useEffect(() => {
-    const savedReadBooks = getBooks();
-    setReadBooks(savedReadBooks);
-  }, []);
-
-  if (ReadBooks.length < 1) {
-    return <EmptyState></EmptyState>;
-  }
   return (
     <div>
       <div className="">

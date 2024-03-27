@@ -36,7 +36,7 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="Leroy Jenkins"
-                className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 bg-gray-300 p-4"
+                className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75  bg-gray-100 p-4"
               />
             </label>
             <label className="block">
@@ -44,19 +44,19 @@ const Contact = () => {
               <input
                 type="email"
                 placeholder="leroy@jenkins.com"
-                className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 bg-gray-300 p-4"
+                className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75  bg-gray-100 p-4"
               />
             </label>
             <label className="block">
               <span className="mb-1">Message</span>
               <textarea
                 rows="3"
-                className="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 bg-gray-300 p-4"
+                className="block w-full rounded-md  bg-gray-100 p-4"
               ></textarea>
             </label>
             <button
               type="button"
-              className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 bg-violet-400 text-gray-900 focus:ring-violet-400 hover:ring-violet-400"
+              className="self-center px-8 py-3 text-lg w-full rounded  bg-[#23BE0A] text-white"
             >
               Submit
             </button>

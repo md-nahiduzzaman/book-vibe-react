@@ -16,4 +16,4 @@ Bookvibe is a user-friendly website designed for book lovers. Whether you're sea
 
 ## Live Website
 
-Visit Bookvibe live at [bookvibe.com](https://www.bookvibe.com)
+Visit Bookvibe live at [bookvibebd.netlify.app](https://bookvibebd.netlify.app/)

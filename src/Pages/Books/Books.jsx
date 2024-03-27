@@ -12,8 +12,7 @@ const Books = () => {
 
   return (
     <div>
-      <h1>Books</h1>
-      <div className="grid grid-cols-4 gap-6">
+      <div className="grid grid-cols-3 gap-6">
         {books.map((book) => (
           <BookCard book={book}></BookCard>
         ))}

@@ -7,7 +7,7 @@ const Hero = () => {
         <div className="hero-content flex-col lg:flex-row-reverse gap-28">
           <img src="images/heroimg.png" className="max-w-sm" />
           <div>
-            <h1 className="text-5xl font-bold playfair mb-12 leading-relaxed">
+            <h1 className="text-5xl font-bold playfont mb-12 leading-relaxed">
               Books to freshen up <br /> your bookshelf
             </h1>
 

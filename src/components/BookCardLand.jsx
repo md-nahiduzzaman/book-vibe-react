@@ -26,7 +26,7 @@ const BookCardLand = ({ book }) => {
           <img
             src={image}
             alt=""
-            className="object-cover object-center h-[250px] rounded-md bg-gray-500"
+            className="object-cover object-center h-[250px] w-full  rounded-md bg-gray-500"
           />
         </div>
         <div className="w-full">

@@ -1,18 +1,23 @@
 import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
+import { IoIosArrowDown } from "react-icons/io";
 
 const ListedBook = () => {
   const [tabIndex, setTabIndex] = useState(0);
 
   return (
     <div>
-      <div>
-        <h1>Books</h1>
+      <div className="w-full h-[100px] bg-gray-100 rounded-lg mb-10">
+        <h1 className="font-bold text-5xl flex items-center justify-center text-center pt-7">
+          Books
+        </h1>
       </div>
       {/* dropdown */}
-      <div>
-        <details className="dropdown">
-          <summary className="m-1 btn">open or close</summary>
+      <div className="flex text-center items-center justify-center mb-16">
+        <details className="dropdown ">
+          <summary className="m-1 btn bg-[#23BE0A] text-white ">
+            Short By <IoIosArrowDown />{" "}
+          </summary>
           <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
             <li>
               <a>Rating</a>
@@ -30,7 +35,7 @@ const ListedBook = () => {
       <div>
         {/* tabs */}
         <div>
-          <div className="flex items-center -mx-4 overflow-x-auto overflow-y-hidden sm:justify-center flex-nowrap ">
+          <div className="flex items-center -mx-4 overflow-x-auto overflow-y-hidden sm:justify-center lg:justify-start flex-nowrap ">
             <Link
               onClick={() => setTabIndex(0)}
               to={` `}

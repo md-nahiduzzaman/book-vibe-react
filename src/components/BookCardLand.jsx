@@ -21,12 +21,12 @@ const BookCardLand = ({ book }) => {
 
   return (
     <div>
-      <div className=" p-6 rounded-md border border-gray-200 flex gap-6 mb-8 ">
+      <div className=" p-6 rounded-md border border-gray-200 flex sm:flex-row flex-col gap-6 mb-8 ">
         <div>
           <img
             src={image}
             alt=""
-            className="object-cover object-center h-[250px] w-full  rounded-md bg-gray-500"
+            className="object-cover object-center sm:h-[250px] h-full w-full  rounded-md bg-gray-500"
           />
         </div>
         <div className="w-full">
@@ -66,7 +66,7 @@ const BookCardLand = ({ book }) => {
           </div>
 
           <hr className="mt-4 mb-4 w-full" />
-          <div className="flex items-center gap-4 font-medium">
+          <div className="flex sm:flex-row flex-col items-center gap-4 font-medium">
             <p className="bg-blue-100 text-blue-600 p-3 rounded-full">
               Category: {category}
             </p>

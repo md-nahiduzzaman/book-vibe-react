@@ -41,6 +41,7 @@ const PagesToRead = () => {
 
   return (
     <BarChart
+      className="sm:w-[1200px] w-full"
       width={1200}
       height={300}
       data={data}

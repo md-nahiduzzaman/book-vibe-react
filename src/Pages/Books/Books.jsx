@@ -12,7 +12,7 @@ const Books = () => {
 
   return (
     <div>
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid sm:grid-cols-3 gap-6">
         {books.map((book) => (
           <BookCard book={book}></BookCard>
         ))}

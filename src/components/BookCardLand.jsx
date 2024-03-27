@@ -73,7 +73,7 @@ const BookCardLand = ({ book }) => {
             <p className="bg-orange-100 text-orange-600 p-3 rounded-full">
               Rating: {rating}
             </p>
-            <Link>
+            <Link to={`/book/${bookId}`}>
               <button className="bg-[#23BE0A] text-white p-3 rounded-full">
                 View Details
               </button>

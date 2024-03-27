@@ -32,63 +32,75 @@ const BookDetails = () => {
   return (
     <div>
       <div className="flex gap-10">
-        <div>
+        <div className="w-[70%]">
           <img src={image} alt="" />
         </div>
         <div>
           <div>
-            <h1>{bookName}</h1>
-            <p>By: {author}</p>
+            <h1 className="playfont font-bold text-5xl mb-4">{bookName}</h1>
+            <p className="font-medium text-xl">By: {author}</p>
           </div>
-          <hr />
+          <hr className="mt-6 mb-4" />
           <div>
-            <h1>{category}</h1>
+            <h1 className="font-medium text-xl">{category}</h1>
           </div>
-          <hr />
+          <hr className="mt-4 mb-6" />
           <div>
-            <p>
-              <span>Review</span>
+            <p className="text-base mb-6">
+              <span className="font-bold">Review: </span>
               {review}
             </p>
-            <div>
+            <div className="flex gap-6 font-bold items-center ">
               <h1>Tag</h1>
-              <p>#{tags[0]}</p>
-              <p>#{tags[1]}</p>
+              <p className="text-[#23BE0A] px-3 py-1 bg-green-100 rounded-full font-medium">
+                #{tags[0]}
+              </p>
+              <p className="text-[#23BE0A] px-3 py-1 bg-green-100 rounded-full font-medium">
+                #{tags[1]}
+              </p>
             </div>
-            <hr />
+            <hr className="mt-6 mb-6" />
             <div>
               <div className="overflow-x-auto">
                 <table className="table w-[50%] ">
-                  <tbody>
+                  <tbody className="">
                     {/* row 1 */}
-                    <tr className="border-none">
-                      <td>Number of Pages:</td>
-                      <td>{totalPages}</td>
+                    <tr className="border-none pb-6">
+                      <td className="p-0 pb-4">Number of Pages:</td>
+                      <td className="p-0 pb-4 font-semibold">{totalPages}</td>
                     </tr>
                     {/* row 2 */}
                     <tr className="border-none">
-                      <td>Publisher:</td>
-                      <td>{author}</td>
+                      <td className="p-0 pb-4">Publisher:</td>
+                      <td className="p-0 pb-4 font-semibold">{author}</td>
                     </tr>
                     {/* row 3 */}
                     <tr className="border-none">
-                      <td>Year of Publishing:</td>
-                      <td>{yearOfPublishing}</td>
+                      <td className="p-0 pb-4">Year of Publishing:</td>
+                      <td className="p-0 pb-4 font-semibold">
+                        {yearOfPublishing}
+                      </td>
                     </tr>
                     {/* row 4 */}
                     <tr className="border-none">
-                      <td>Rating:</td>
-                      <td>{rating}</td>
+                      <td className="p-0 pb-4">Rating:</td>
+                      <td className="p-0 pb-4 font-semibold">{rating}</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </div>
-            <div className="flex gap-6">
-              <button onClick={() => handleReadBooks(book)} className="btn">
+            <div className="flex gap-6 mt-8">
+              <button
+                onClick={() => handleReadBooks(book)}
+                className="btn bg-white border-gray-500"
+              >
                 Read
               </button>
-              <button onClick={() => handleWishListBooks(book)} className="btn">
+              <button
+                onClick={() => handleWishListBooks(book)}
+                className="btn bg-[#50B1C9] text-white"
+              >
                 Wishlist
               </button>
             </div>

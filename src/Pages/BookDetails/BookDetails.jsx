@@ -31,8 +31,8 @@ const BookDetails = () => {
 
   return (
     <div>
-      <div className="flex gap-10">
-        <div className="w-[70%]">
+      <div className="flex sm:flex-row flex-col gap-10 sm:mx-0 mx-4">
+        <div className="sm:w-[70%] w-full">
           <img src={image} alt="" />
         </div>
         <div>
@@ -90,7 +90,7 @@ const BookDetails = () => {
                 </table>
               </div>
             </div>
-            <div className="flex gap-6 mt-8">
+            <div className="flex gap-6 mt-8 mb-14">
               <button
                 onClick={() => handleReadBooks(book)}
                 className="btn bg-white border-gray-500"

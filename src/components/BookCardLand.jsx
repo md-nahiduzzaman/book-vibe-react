@@ -1,4 +1,3 @@
-import { CiStar } from "react-icons/ci";
 import { Link } from "react-router-dom";
 import { HiOutlineUsers } from "react-icons/hi2";
 import { HiOutlineDocumentChartBar } from "react-icons/hi2";

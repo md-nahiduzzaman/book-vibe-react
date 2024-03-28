@@ -1,5 +1,3 @@
-// ListedBook.js
-
 import { createContext, useEffect, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
@@ -12,21 +10,15 @@ const ListedBook = () => {
   const [ReadBooks, setReadBooks] = useState([]);
   const [WishlistBooks, setWishlistBook] = useState([]);
 
-  // readbooks
-
   useEffect(() => {
     const savedReadBooks = getBooks();
     setReadBooks(savedReadBooks);
   }, []);
 
-  // wishlist
-
   useEffect(() => {
     const savedWishListBooks = getWishlistBooks();
     setWishlistBook(savedWishListBooks);
   }, []);
-
-  // sort function
 
   const sortData = (data, setData, sortBy) => {
     let sortedData = [...data];
@@ -46,13 +38,11 @@ const ListedBook = () => {
     <div>
       <BooksContext.Provider value={{ WishlistBooks, ReadBooks }}>
         {" "}
-        {/* Fix value prop */}
         <div className="w-full h-[100px] bg-gray-100 rounded-lg mb-10">
           <h1 className="font-bold text-5xl flex items-center justify-center text-center pt-7">
             Books
           </h1>
         </div>
-        {/* dropdown */}
         <div className="flex text-center items-center justify-center mb-16">
           <details className="dropdown ">
             <summary className="m-1 btn bg-[#23BE0A] text-white ">
@@ -60,14 +50,27 @@ const ListedBook = () => {
             </summary>
             <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
               <li>
-                <a onClick={() => sortData(ReadBooks, setReadBooks, "rating")}>
+                {/* <a onClick={() => sortData(ReadBooks, setReadBooks, "rating")}> */}
+                <a
+                  onClick={() =>
+                    sortData(
+                      tabIndex === 0 ? ReadBooks : WishlistBooks,
+                      tabIndex === 0 ? setReadBooks : setWishlistBook,
+                      "rating"
+                    )
+                  }
+                >
                   Rating
                 </a>
               </li>
               <li>
                 <a
                   onClick={() =>
-                    sortData(ReadBooks, setReadBooks, "totalPages")
+                    sortData(
+                      tabIndex === 0 ? ReadBooks : WishlistBooks,
+                      tabIndex === 0 ? setReadBooks : setWishlistBook,
+                      "totalPages"
+                    )
                   }
                 >
                   Number of pages
@@ -76,7 +79,11 @@ const ListedBook = () => {
               <li>
                 <a
                   onClick={() =>
-                    sortData(ReadBooks, setReadBooks, "yearOfPublishing")
+                    sortData(
+                      tabIndex === 0 ? ReadBooks : WishlistBooks,
+                      tabIndex === 0 ? setReadBooks : setWishlistBook,
+                      "yearOfPublishing"
+                    )
                   }
                 >
                   Publisher year
@@ -86,7 +93,6 @@ const ListedBook = () => {
           </details>
         </div>
         <div>
-          {/* tabs */}
           <div>
             <div className="flex items-center -mx-4 overflow-x-auto overflow-y-hidden sm:justify-center lg:justify-start flex-nowrap ">
               <Link

@@ -28,7 +28,7 @@ const Nav = () => {
             >
               <NavLink
                 className={({ isActive }) =>
-                  isActive ? "text-primary font-bold" : "font-bold"
+                  isActive ? "text-[#23BE0A] font-bold" : "font-bold"
                 }
                 to="/"
               >
@@ -36,7 +36,7 @@ const Nav = () => {
               </NavLink>
               <NavLink
                 className={({ isActive }) =>
-                  isActive ? "text-primary font-bold" : "font-bold"
+                  isActive ? "text-[#23BE0A] font-bold" : "font-bold"
                 }
                 to="/listedbooks"
               >
@@ -44,7 +44,7 @@ const Nav = () => {
               </NavLink>
               <NavLink
                 className={({ isActive }) =>
-                  isActive ? "text-primary font-bold" : "font-bold"
+                  isActive ? "text-[#23BE0A] font-bold" : "font-bold"
                 }
                 to="/pagestoread"
               >
@@ -52,7 +52,7 @@ const Nav = () => {
               </NavLink>
               <NavLink
                 className={({ isActive }) =>
-                  isActive ? "text-primary font-bold" : "font-bold"
+                  isActive ? "text-[#23BE0A] font-bold" : "font-bold"
                 }
                 to="/contact"
               >
@@ -60,7 +60,7 @@ const Nav = () => {
               </NavLink>
               <NavLink
                 className={({ isActive }) =>
-                  isActive ? "text-primary font-bold" : "font-bold"
+                  isActive ? "text-[#23BE0A] font-bold" : "font-bold"
                 }
                 to="/featuredbooks"
               >

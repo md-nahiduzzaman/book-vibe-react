@@ -37,7 +37,6 @@ const ListedBook = () => {
   return (
     <div>
       <BooksContext.Provider value={{ WishlistBooks, ReadBooks }}>
-        {" "}
         <div className="w-full h-[100px] bg-gray-100 rounded-lg mb-10">
           <h1 className="font-bold text-5xl flex items-center justify-center text-center pt-7">
             Books
@@ -46,7 +45,7 @@ const ListedBook = () => {
         <div className="flex text-center items-center justify-center mb-16">
           <details className="dropdown ">
             <summary className="m-1 btn bg-[#23BE0A] text-white ">
-              Short By <IoIosArrowDown />{" "}
+              Short By <IoIosArrowDown />
             </summary>
             <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
               <li>

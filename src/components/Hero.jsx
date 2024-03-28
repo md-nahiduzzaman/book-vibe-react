@@ -6,8 +6,8 @@ const Hero = () => {
       <div className="hero bg-base-200 sm:h-[70vh] rounded-3xl">
         <div className="hero-content flex-col lg:flex-row-reverse gap-28">
           <img src="images/heroimg.png" className="max-w-sm" />
-          <div className="text-center">
-            <h1 className="text-4xl sm:text-5xl  font-bold playfont mb-3 sm:mb-12 leading-relaxed">
+          <div className="text-center sm:text-left">
+            <h1 className="text-4xl sm:text-5xl  font-bold playfont mb-3 sm:mb-12 sm:leading-relaxed">
               Books to freshen up <br /> your bookshelf
             </h1>
 

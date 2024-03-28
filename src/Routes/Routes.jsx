@@ -45,13 +45,14 @@ const router = createBrowserRouter([
         element: <BookDetails></BookDetails>,
         loader: () => fetch("data.json"),
       },
-      {
-        path: "/contact",
-        element: <Contact></Contact>,
-      },
+
       {
         path: "/featuredbooks",
         element: <FeaturedBooks></FeaturedBooks>,
+      },
+      {
+        path: "/contact",
+        element: <Contact></Contact>,
       },
     ],
   },

@@ -54,17 +54,17 @@ const Nav = () => {
                 className={({ isActive }) =>
                   isActive ? "text-[#23BE0A] font-bold" : "font-bold"
                 }
-                to="/contact"
+                to="/featuredbooks"
               >
-                Contact Us
+                Featured Books
               </NavLink>
               <NavLink
                 className={({ isActive }) =>
                   isActive ? "text-[#23BE0A] font-bold" : "font-bold"
                 }
-                to="/featuredbooks"
+                to="/contact"
               >
-                Featured Books
+                Contact Us
               </NavLink>
             </ul>
           </div>
@@ -108,9 +108,9 @@ const Nav = () => {
                   ? "text-[#23BE0A] font-bold border border-[#23BE0A] rounded-lg p-3"
                   : "font-normal"
               }
-              to="/contact"
+              to="/featuredbooks"
             >
-              Contact Us
+              Featured Books
             </NavLink>
             <NavLink
               className={({ isActive }) =>
@@ -118,9 +118,9 @@ const Nav = () => {
                   ? "text-[#23BE0A] font-bold border border-[#23BE0A] rounded-lg p-3"
                   : "font-normal"
               }
-              to="/featuredbooks"
+              to="/contact"
             >
-              Featured Books
+              Contact Us
             </NavLink>
           </ul>
         </div>

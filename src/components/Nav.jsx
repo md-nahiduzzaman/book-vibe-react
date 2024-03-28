@@ -68,7 +68,7 @@ const Nav = () => {
               </NavLink>
             </ul>
           </div>
-          <a className="text-4xl font-black">Book Vibe</a>
+          <a className="text-xl sm:text-4xl font-black">Book Vibe</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 flex gap-6 items-center">

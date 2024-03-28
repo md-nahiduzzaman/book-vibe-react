@@ -1,8 +1,8 @@
 [
   {
     "bookId": 1,
-    "bookName": "The Great Gatsby",
-    "author": "F. Scott Fitzgerald",
+    "bookName": "Model Village",
+    "author": "Leo A. Murphy",
     "image": "https://blog-cdn.reedsy.com/directories/gallery/166/large_2f9efcc5c6b1207ccf5aa5b1e448530f.jpg",
     "review": "The Great Gatsby is a timeless classic that delves into the decadence and disillusionment of the Jazz Age. Through the eyes of narrator Nick Carraway, we are introduced to the enigmatic Jay Gatsby, whose extravagant parties and mysterious past captivate the imagination. Fitzgerald's prose is elegant and haunting, weaving a tale of love, ambition, and the pursuit of the American Dream.",
     "totalPages": 180,
@@ -14,8 +14,8 @@
   },
   {
     "bookId": 2,
-    "bookName": "To Kill a Mockingbird",
-    "author": "Harper Lee",
+    "bookName": "In The Joshua Sea",
+    "author": "M. Stillman",
     "image": "https://blog-cdn.reedsy.com/directories/gallery/162/large_258cf9c56fb1b3ec7d3667cf474435c6.jpg",
     "review": "To Kill a Mockingbird is a powerful exploration of racial injustice and moral growth in the Deep South. Set in the fictional town of Maycomb, Alabama, during the 1930s, the novel follows young Scout Finch as she learns about empathy, compassion, and the complexities of human nature. Harper Lee's masterful storytelling and vivid characters make this book a must-read for all ages.",
     "totalPages": 281,
@@ -27,8 +27,8 @@
   },
   {
     "bookId": 3,
-    "bookName": "1984",
-    "author": "George Orwell",
+    "bookName": "Blue Van Winkle",
+    "author": "Nathaniel David Knox",
     "image": "https://blog-cdn.reedsy.com/directories/gallery/157/large_29d6777c171a1f00058b62d109ce5d0f.jpg",
     "review": "1984 is a dystopian masterpiece that explores the dangers of totalitarianism and the erosion of individual freedom. Set in a future world where the government surveils its citizens and controls their thoughts, Winston Smith rebels against the oppressive regime of Big Brother. George Orwell's prophetic vision of a surveillance state remains chillingly relevant today.",
     "totalPages": 328,
@@ -40,8 +40,8 @@
   },
   {
     "bookId": 4,
-    "bookName": "Pride and Prejudice",
-    "author": "Jane Austen",
+    "bookName": "I Had To Break Me",
+    "author": "Nisha",
     "image": "https://blog-cdn.reedsy.com/directories/gallery/149/large_731b19255102c27436a5d5bdcd2cdce2.jpg",
     "review": "Pride and Prejudice is a timeless romance that explores the complexities of love and societal expectations in Regency-era England. When spirited Elizabeth Bennet meets the aloof Mr. Darcy, sparks fly amidst misunderstandings and societal conventions. Jane Austen's witty dialogue and astute observations of human nature make this novel a beloved classic.",
     "totalPages": 279,
@@ -53,8 +53,8 @@
   },
   {
     "bookId": 5,
-    "bookName": "The Catcher in the Rye",
-    "author": "J.D. Salinger",
+    "bookName": "The Climate Crisis",
+    "author": "Miguel A. Rondon Segura",
     "image": "https://blog-cdn.reedsy.com/directories/gallery/140/large_6ce536d027b9d60b3237117c81f42d77.jpg",
     "review": "The Catcher in the Rye is a poignant coming-of-age novel that captures the angst and alienation of adolescence. Holden Caulfield, a disaffected teenager, embarks on a journey of self-discovery in New York City, grappling with themes of identity, innocence, and the search for meaning. J.D. Salinger's iconic protagonist continues to resonate with readers of all generations.",
     "totalPages": 224,
@@ -66,8 +66,8 @@
   },
   {
     "bookId": 6,
-    "bookName": "Harry Potter and the Philosopher's Stone",
-    "author": "J.K. Rowling",
+    "bookName": "Island of Gold",
+    "author": "Amy Maroney",
     "image": "https://blog-cdn.reedsy.com/directories/gallery/122/large_6e3f665d013d66eb351dc21605aa0602.jpg",
     "review": "Harry Potter and the Philosopher's Stone is the magical beginning of an epic journey into the wizarding world. Follow young Harry Potter as he discovers his true heritage and attends Hogwarts School of Witchcraft and Wizardry, where he encounters friendship, adventure, and the dark wizard Voldemort. J.K. Rowling's imaginative storytelling and richly drawn characters make this book a modern classic.",
     "totalPages": 309,
